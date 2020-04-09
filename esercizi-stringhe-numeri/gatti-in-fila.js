@@ -17,4 +17,10 @@
 
   http://www.imparareaprogrammare.it
 */
-var cats = 44;
+var gatti = 44;
+var numeroFile = 6;
+
+var gattiPerFila = Math.ceil(gatti / numeroFile);
+var gattiMancanti = (gattiPerFila * numeroFile) - gatti;
+
+console.log(`${gatti} gatti in fila per ${gattiPerFila} si unirono in ${numeroFile} file. Nell ultima fila rimasero ${gattiMancanti} posti gatto disponibili.`);
